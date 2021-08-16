@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title-bar {
+  padding: 0 12px;
+  display: flex;
+  height: 36px;
+  border-bottom: 1px solid #e8eaeb;
+  background-color: #f2f4f5;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.logo {
+  width: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+font-size: 10px;
+  width: 24px;
+  border: 1px solid #e8eaeb;
+  height: 24px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #e8eaeb;
+}
+
+.dock {
+    width: 54px;
+    height: calc(100% - 36px);
+    background-color:#29015a;
+ }
