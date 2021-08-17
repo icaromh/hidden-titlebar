@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+.is-desktop.windows .title-bar {
+  padding-right: 250px;
+}
+
+.is-desktop.macos .title-bar {
+  padding-left: 80px;
+}
+
 .title-bar {
   padding: 0 12px;
   display: flex;
@@ -14,20 +22,13 @@ body {
   border-bottom: 1px solid #e8eaeb;
   background-color: #f2f4f5;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   -webkit-app-region: drag;
 }
 
-.logo {
-  width: 53px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 button {
-font-size: 10px;
+  font-size: 10px;
   width: 24px;
   border: 1px solid #e8eaeb;
   height: 24px;
@@ -42,7 +43,25 @@ button:hover {
 }
 
 .dock {
-    width: 54px;
-    height: calc(100% - 36px);
-    background-color:#29015a;
- }
+  width: 54px;
+  height: calc(100% - 36px);
+  background-color: #29015a;
+}
+
+.windows-controls {
+  padding-left: 12px;
+  border-left: 1px solid #555;
+  margin-left: 12px;
+}
+
+.windows-controls button {
+  border-radius: 0;
+  height: 100%;
+  width: 36px;
+  border: 0;
+  
+}
+
+.windows-controls button.close {
+  background-color:red;
+}
